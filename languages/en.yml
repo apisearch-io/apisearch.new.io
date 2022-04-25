@@ -3,6 +3,10 @@ global:
     link: https://apisearch.io
     description: Welcome to the next generation Search As A Service. Search over millions of documents, and give to your users unique, amazing and unforgettable experiences.
 
+menu:
+  all_in_one: "All-in #1"
+
+
 index:
   title: Apisearch - Home
   header:

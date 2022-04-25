@@ -75,7 +75,7 @@ function generatePageInLanguage(
         'assets_path' => $rootPath . '/' . $assets,
     ]);
 
-    file_put_contents(__DIR__ . "/{$target}{$languagePath}/$page.html", $content);
+    file_put_contents(__DIR__ . "/{$target}{$languagePath}/$page", $content);
 }
 
 /**

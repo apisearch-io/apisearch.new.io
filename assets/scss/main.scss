@@ -1,0 +1,81 @@
+@import '_constants';
+@import '_responsive';
+
+.top-banner-ecommerce-site-search-trends {
+  margin: auto;
+}
+
+.banner-text:hover{
+  text-decoration: underline !important;
+  color:white
+}
+
+.closer-banner{
+  border:none;
+  color: whitesmoke;
+}
+
+.closer-banner-svg:hover{
+  stroke-width: 4;
+}
+
+figure {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+figure:hover+span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#main-message {
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  .big-text-second-block {
+    margin-top: -25px;
+  }
+
+  .big-text {
+    font-size: 7.5rem;
+  }
+
+  .big-text-continuation {
+    margin-top: -75px;
+  }
+
+  .description {
+    margin-top: -10px;
+    font-size: 2rem;
+  }
+
+  #main-demo {
+    border-bottom: solid $green 2px;
+    input {
+      font-size: 50px;
+      caret-color: $green;
+    }
+  }
+}
+
+#features {
+  .icon {
+    font-size: 40px;
+  }
+}

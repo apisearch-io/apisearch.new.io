@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+    <head>
+        {% include "blocks/meta.html.twig" %}
+        {% include "blocks/css.html.twig" %}
+    </head>
+{% endblock head %}
+
+{% block body %}
+    <body class="antialiased bg-body text-body font-body">
+        {% block content %}{% endblock content %}
+
+
+        {% include "blocks/footer.html.twig" %}
+        {% include "blocks/js.html.twig" %}
+        {% block js_widgets %}{% endblock js_widgets %}
+    </body>
+{% endblock body %}
+</html>

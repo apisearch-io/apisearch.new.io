@@ -1,9 +1,42 @@
-index:
-  title: Apisearch - Principal
+global:
+  meta:
+    link: https://apisearch.io
+    description: El buscador inteligente para eCommerce, que entiende tanto lo que tus clientes quieren encontrar como lo que te interesa vender gracias a la inteligencia artificial.
+
+  menu:
+    all_in_one: "All-in #1"
+    prices: Precios
+    clients: Clientes
+    log_in: Entrar
+
+index.html:
   header:
-    title1: Bienvenido a la
-    title2: nueva generación
-    title3: de buscadores como servicio
-    desc: Busca entre millones de documentos, y provee a tus usuarios de experiencias únicas, increibles y inolvidables.
-    button1: Utiliza nuestra nube
-    button2: Descarga
+    write_whatever: Escribe lo que quieras
+    placeholder: aqui
+    to_find_1: para encontrar lo que
+    to_find_2: buscas
+    desc: El buscador inteligente para eCommerce, que entiende tanto lo que tus clientes quieren encontrar como lo que te interesa vender gracias a la inteligencia artificial.
+    request_a_demo: Solicita una demo
+
+  video:
+
+  features:
+    custom:
+      title: Personalización
+      desc: La mayoría de buscadores se ven iguales, neutros, lo que hace demasiado evidente que el buscador no está plenamente integrado con el eCommerce. Con Apisearch puedes editar todo el buscador con plantillas y manipular con estilos propios los elementos que quieres mostrar.
+    ia:
+      title: Inteligencia artificial
+      desc: Nuestra inteligencia artificial recoge los eventos de tus usuario y aprende de ellos para ofrecer resultados más relevantes.
+    funnel:
+      title: Funnel de ventas
+      desc: La manera mas sencilla de visualizar las ventas que esta generando el buscador. Puedes ver por fecha y por dispositivo los usuarios únicos que han entrado en la web, que han usado el buscador, que han generado un evento, y que han acabado comprando.
+    plug_play:
+      title: Solución Plug & Play
+      desc: Sólo necesitamos 10 minutos de tu tiempo para que instalemos el buscador en tu eCommerce. Nos encargamos de todos de principio a fin. Te lo dejamos integrado en menos de un dia y nos encargamos de todo el proceso de principio a fin.
+    rules:
+      title: Reglas de negocio
+      desc: Da prioridad a aquellos productos a los que quieras dar más importancia según las palabras con las que buscan tus usuarios. Puedes usar tanto las campañas o los Boosting rules. Con las campañas puedes ordenar al detalle los productos que quieres mostrar según una palabra clave. Con los Boosting rules puedes dar prioridades a una categoría de productos o una marca en concreto.
+    multi_device:
+      title: Multi dispositivo
+      desc: Hemos logrado introducir todas las características de la versión de escritorio en la tablet y el móvil.El menú lateral ya tiene Paleta de colores, medidas, radio buttons, checkbox, categorías y subcategorías. Puedes configurar de inicio si deseas que el usuario tenga menú de opciones o la funcionalidad de ordenar. El real-time Search, búsqueda en tiempo real, sigue funcionando a pesar de tener muy poca cobertura.
+

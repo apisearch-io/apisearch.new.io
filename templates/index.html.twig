@@ -1,64 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Apisearch official website.">
-<meta name="author" content="Apisearch team <info@apisearch.io>">
+{% extends "layout.html.twig" %}
 
-<!-- Favicons -->
-<link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicons/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicons/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicons/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicons/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicons/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicons/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicons/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicons/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicons/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicons/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./assets/images/favicons/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
 
-<!-- Primary Meta Tags -->
-<title></title>
-<meta name="title" content="">
-<meta name="description" content="El buscador inteligente para eCommerce, que entiende tanto lo que tus clientes quieren encontrar como lo que te interesa vender gracias a la inteligencia artificial.">
+{% block content %}
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="">
-<meta property="og:title" content="">
-<meta property="og:description" content="El buscador inteligente para eCommerce, que entiende tanto lo que tus clientes quieren encontrar como lo que te interesa vender gracias a la inteligencia artificial.">
-<meta property="og:image" content="./assets/apisearch-panel.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="">
-<meta property="twitter:title" content="">
-<meta property="twitter:description" content="El buscador inteligente para eCommerce, que entiende tanto lo que tus clientes quieren encontrar como lo que te interesa vender gracias a la inteligencia artificial.">
-<meta property="twitter:image" content="./assets/apisearch-panel.png">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="./assets/css/tailwind/tailwind.min.css">
-<link rel="stylesheet" href="./assets/css/main.css">
-    </head>
-
-    <body class="antialiased bg-body text-body font-body">
-        
-    <div class="top-banner-ecommerce-site-search-trends bg-blue-800 text-center">
-    <div class="flex justify-center max-w-screen-2xl mx-2 py-3 flex items-center">
-        <a class="banner-text text-decoration-none" href="#">
-            <p class="hidden lg:block text-white">Solicita aquí tu estudio gratuito de tu buscador eCommerce para mejorar margen y ventas gracias a la inteligencia artificial.</p>
-            <p class="block sm:block lg:hidden">Estudio gratuito para mejorar ventas.</p>
-        </a>
-        <button class="closer-banner cursor-pointer app-none bgc-transparent mx-2 pt-1"><svg xmlns="http://www.w3.org/2000/svg" class="closer-banner-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
-    </div>
-</div>
+    {% include "blocks/study_banner.html.twig" %}
 
     <div class="bg-blue-50">
         <div class="container mx-auto">
@@ -76,11 +21,11 @@
                         </button>
                     </div>
                     <ul class="hidden lg:flex ml-auto mr-10 items-center w-auto space-x-12">
-                        <li><a class="text-sm text-indigo-50 hover:text-indigo-200 font-medium" href="#">All-in #1</a></li>
-                        <li><a class="text-sm text-indigo-50 hover:text-indigo-200 font-medium" href="#">Precios</a></li>
-                        <li><a class="text-sm text-indigo-50 hover:text-indigo-200 font-medium" href="#">Clientes</a></li>
+                        <li><a class="text-sm text-indigo-50 hover:text-indigo-200 font-medium" href="#">{{ t.menu.all_in_one }}</a></li>
+                        <li><a class="text-sm text-indigo-50 hover:text-indigo-200 font-medium" href="#">{{ t.menu.prices }}</a></li>
+                        <li><a class="text-sm text-indigo-50 hover:text-indigo-200 font-medium" href="#">{{ t.menu.clients }}</a></li>
                     </ul>
-                    <a class="hidden lg:block px-5 py-3 text-sm text-center font-semibold text-white hover:text-indigo-500 hover:bg-white border border-white rounded transition duration-200" href="#">Entrar</a>
+                    <a class="hidden lg:block px-5 py-3 text-sm text-center font-semibold text-white hover:text-indigo-500 hover:bg-white border border-white rounded transition duration-200" href="#">{{ t.menu.log_in }}</a>
                 </div>
                 <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
                     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -97,9 +42,9 @@
                         </div>
                         <div>
                             <ul>
-                                <li class="mb-1 text-base"><a class="text-xl block p-4 text-sm font-semibold hover:bg-green-50 hover:text-indigo-500 rounded" href="#">All-in #1</a></li>
-                                <li class="mb-1"><a class=" text-xl block p-4 text-sm font-semibold hover:bg-green-50 hover:text-indigo-500 rounded" href="#">Precios</a></li>
-                                <li class="mb-1"><a class=" text-xl block p-4 text-sm font-semibold hover:bg-green-50 hover:text-indigo-500 rounded" href="#">Clientes</a></li>
+                                <li class="mb-1 text-base"><a class="text-xl block p-4 text-sm font-semibold hover:bg-green-50 hover:text-indigo-500 rounded" href="#">{{ t.menu.all_in_one }}</a></li>
+                                <li class="mb-1"><a class=" text-xl block p-4 text-sm font-semibold hover:bg-green-50 hover:text-indigo-500 rounded" href="#">{{ t.menu.prices }}</a></li>
+                                <li class="mb-1"><a class=" text-xl block p-4 text-sm font-semibold hover:bg-green-50 hover:text-indigo-500 rounded" href="#">{{ t.menu.clients }}</a></li>
                             </ul>
                         </div>
                         <div class="mt-auto">
@@ -115,20 +60,20 @@
 
         <div id="main-message" class="container mx-auto mb-20 bg-blue-50">
             <div class="mx-10">
-                <p class="text-2xl lg:text-7xl  font-semibold big-text">Escribe lo que quieras</p>
+                <p class="text-2xl lg:text-7xl  font-semibold big-text">{{ t.header.write_whatever }}</p>
             </div>
             <div class="mx-10" id="main-demo">
                 <input class="leading-tight bg-blue-50 block w-full px-2 mb-2 md:mb-0 focus:bg-blue-50 focus:outline-none " type="text">
             </div>
             <div class="mx-10 big-text-second-block">
-                <p class="text-2xl lg:text-7xl font-semibold big-text">para encontrar lo que</p>
+                <p class="text-2xl lg:text-7xl font-semibold big-text">{{ t.header.to_find_1 }}</p>
                 <div class="block lg:flex">
-                    <p class="text-2xl lg:text-7xl flex-none font-semibold big-text big-text-continuation">buscas</p>
-                    <p class="block text-lg my-5 lg:mx-10 lg:my-3 lg:flex lg:my-10 lg:text-2xl description">El buscador inteligente para eCommerce, que entiende tanto lo que tus clientes quieren encontrar como lo que te interesa vender gracias a la inteligencia artificial.</p>
+                    <p class="text-2xl lg:text-7xl flex-none font-semibold big-text big-text-continuation">{{ t.header.to_find_2 }}</p>
+                    <p class="block text-lg my-5 lg:mx-10 lg:my-3 lg:flex lg:my-10 lg:text-2xl description">{{ t.header.desc }}</p>
                 </div>
                 <div class="block lg:flex">
                     <input class="appearance-none block w-4/6 py-3 px-4 mb-2 md:mb-0 leading-tight text-gray-700 bg-gray-200 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none lg:mr-10" type="text" placeholder="E-mail">
-                    <button class="my-5 inline-block py-3 px-6 leading-none text-white bg-green-50 hover:bg-green-500 rounded shadow lg:my-0 lg:py-6 lg:w-100">Solicita una demo</button>
+                    <button class="my-5 inline-block py-3 px-6 leading-none text-white bg-green-50 hover:bg-green-500 rounded shadow lg:my-0 lg:py-6 lg:w-100">{{ t.header.request_a_demo }}</button>
                 </div>
             </div>
         </div>
@@ -149,8 +94,8 @@
                         <div class="flex">
                             <i class="icon fa-solid fa-pen-to-square mr-10 mt-2"></i>
                             <div>
-                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">Personalización</h3>
-                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">La mayoría de buscadores se ven iguales, neutros, lo que hace demasiado evidente que el buscador no está plenamente integrado con el eCommerce. Con Apisearch puedes editar todo el buscador con plantillas y manipular con estilos propios los elementos que quieres mostrar.</p>
+                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">{{ t.features.custom.title }}</h3>
+                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">{{ t.features.custom.desc }}</p>
                             </div>
                         </div>
                     </div>
@@ -158,8 +103,8 @@
                         <div class="flex">
                             <i class="icon fa-solid fa-brain mr-10 mt-2"></i>
                             <div>
-                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">Inteligencia artificial</h3>
-                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">Nuestra inteligencia artificial recoge los eventos de tus usuario y aprende de ellos para ofrecer resultados más relevantes.</p>
+                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">{{ t.features.ia.title }}</h3>
+                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">{{ t.features.ia.desc }}</p>
                             </div>
                         </div>
                     </div>
@@ -167,8 +112,8 @@
                         <div class="flex">
                             <i class="icon fa-solid fa-filter-circle-dollar mr-10 mt-2"></i>
                             <div>
-                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">Funnel de ventas</h3>
-                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">La manera mas sencilla de visualizar las ventas que esta generando el buscador. Puedes ver por fecha y por dispositivo los usuarios únicos que han entrado en la web, que han usado el buscador, que han generado un evento, y que han acabado comprando.</p>
+                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">{{ t.features.funnel.title }}</h3>
+                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">{{ t.features.funnel.desc }}</p>
                             </div>
                         </div>
                     </div>
@@ -176,8 +121,8 @@
                         <div class="flex">
                             <i class="icon fa-solid fa-plug-circle-bolt mr-10 mt-2"></i>
                             <div>
-                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">Solución Plug &amp; Play</h3>
-                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">Sólo necesitamos 10 minutos de tu tiempo para que instalemos el buscador en tu eCommerce. Nos encargamos de todos de principio a fin. Te lo dejamos integrado en menos de un dia y nos encargamos de todo el proceso de principio a fin.</p>
+                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">{{ t.features.plug_play.title }}</h3>
+                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">{{ t.features.plug_play.desc }}</p>
                             </div>
                         </div>
                     </div>
@@ -185,8 +130,8 @@
                         <div class="flex">
                             <i class="icon fa-solid fa-ruler mr-10 mt-2"></i>
                             <div>
-                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">Reglas de negocio</h3>
-                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">Da prioridad a aquellos productos a los que quieras dar más importancia según las palabras con las que buscan tus usuarios. Puedes usar tanto las campañas o los Boosting rules. Con las campañas puedes ordenar al detalle los productos que quieres mostrar según una palabra clave. Con los Boosting rules puedes dar prioridades a una categoría de productos o una marca en concreto.</p>
+                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">{{ t.features.rules.title }}</h3>
+                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">{{ t.features.rules.desc }}</p>
                             </div>
                         </div>
                     </div>
@@ -194,8 +139,8 @@
                         <div class="flex">
                             <i class="icon fa-solid fa-mobile-screen-button mr-10 mt-2"></i>
                             <div>
-                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">Multi dispositivo</h3>
-                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">Hemos logrado introducir todas las características de la versión de escritorio en la tablet y el móvil.El menú lateral ya tiene Paleta de colores, medidas, radio buttons, checkbox, categorías y subcategorías. Puedes configurar de inicio si deseas que el usuario tenga menú de opciones o la funcionalidad de ordenar. El real-time Search, búsqueda en tiempo real, sigue funcionando a pesar de tener muy poca cobertura.</p>
+                                <h3 class="mb-4 text-xl md:text-2xl font-bold font-heading">{{ t.features.multi_device.title }}</h3>
+                                <p class="text-lg leading-loose md:text-lg md:leading-loose text-gray-500">{{ t.features.multi_device.desc }}</p>
                             </div>
                         </div>
                     </div>
@@ -325,81 +270,4 @@
         </div>
     </div>
 
-
-
-        
-<footer class="py-20">
-    <div class="container px-4 mx-auto">
-        <div class="flex flex-wrap -mx-4 mb-8 lg:mb-16">
-            <div class="w-full lg:w-1/3 px-4 mb-12 lg:mb-0">
-                <a class="text-gray-600 text-2xl leading-none" href="#">
-                    <img class="h-8" src="plain-assets/logos/plain-indigo.svg" alt="" width="auto">
-                </a>
-                <p class="mt-5 mb-6 max-w-xs text-gray-500 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div>
-                    <a class="inline-block h-6 mr-8" href="#">
-                        <img class="mx-auto" src="plain-assets/socials/facebook.svg">
-                    </a>
-                    <a class="inline-block h-6 mr-8" href="#">
-                        <img class="mx-auto" src="plain-assets/socials/github.svg">
-                    </a>
-                    <a class="inline-block h-6 mr-8" href="#">
-                        <img class="mx-auto" src="plain-assets/socials/instagram.svg">
-                    </a>
-                    <a class="inline-block h-6 mr-8" href="#">
-                        <img class="mx-auto" src="plain-assets/socials/linkedin.svg">
-                    </a>
-                    <a class="inline-block h-6" href="#">
-                        <img class="mx-auto" src="plain-assets/socials/twitter.svg">
-                    </a>
-                </div>
-            </div>
-            <div class="w-full lg:w-2/3 px-4">
-                <div class="flex flex-wrap justify-between">
-                    <div class="w-1/2 lg:w-1/4 mb-8 lg:mb-0">
-                        <h3 class="mb-6 text-lg font-bold font-heading">Company</h3>
-                        <ul class="text-sm">
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">About Us</a></li>
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Careers</a></li>
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Press</a></li>
-                            <li><a class="text-indigo-500 hover:text-indigo-700" href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 lg:w-1/4 mb-8 lg:mb-0">
-                        <h3 class="mb-6 text-lg font-bold font-heading">Pages</h3>
-                        <ul class="text-sm">
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Login</a></li>
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Register</a></li>
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Add list</a></li>
-                            <li><a class="text-indigo-500 hover:text-indigo-700" href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 lg:w-1/4 mb-8 lg:mb-0">
-                        <h3 class="mb-6 text-lg font-bold font-heading">Legal</h3>
-                        <ul class="text-sm">
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Terms</a></li>
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">About Us</a></li>
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Team</a></li>
-                            <li><a class="text-indigo-500 hover:text-indigo-700" href="#">Privacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 lg:w-1/4">
-                        <h3 class="mb-6 text-lg font-bold font-heading">Resources</h3>
-                        <ul class="text-sm">
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Blog</a></li>
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Service</a></li>
-                            <li class="mb-4"><a class="text-indigo-500 hover:text-indigo-700" href="#">Product</a></li>
-                            <li><a class="text-indigo-500 hover:text-indigo-700" href="#">Pricing</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="border-t pt-8">
-            <p class="lg:text-center text-sm text-gray-500">All rights reserved. © Plain Inc.</p>
-        </div>
-    </div>
-</footer>
-        <script src="./assets/js/main.js"></script>
-            </body>
-</html>
+{% endblock %}
