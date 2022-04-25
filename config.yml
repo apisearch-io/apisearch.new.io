@@ -9,5 +9,5 @@ languages: [es]
 root_language: es
 pages: [index.html]
 assets: assets
-files: [CNAME, robots.txt]
+files: [robots.txt]
 target: docs
